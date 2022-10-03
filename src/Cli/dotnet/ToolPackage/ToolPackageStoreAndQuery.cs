@@ -71,13 +71,13 @@ namespace Microsoft.DotNet.ToolPackage
             {
                 var name = Path.GetFileName(subdirectory);
                 var packageId = new PackageId(name);
-
+                
                 // Ignore the staging directory and any directory that isn't the same as the package id
                 if (name == StagingDirectory || name != packageId.ToString())
                 {
                     continue;
                 }
-
+                
                 foreach (var package in EnumeratePackageVersions(packageId))
                 {
                     yield return package;

@@ -231,6 +231,7 @@ namespace Microsoft.DotNet.Tests.Commands.Tool
                         "broken").Yellow()));
         }
 
+        
         private IToolPackage CreateMockToolPackage(string id, string version, IReadOnlyList<RestoredCommand> commands)
         {
             var package = new Mock<IToolPackage>(MockBehavior.Strict);

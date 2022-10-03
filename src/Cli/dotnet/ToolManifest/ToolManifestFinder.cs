@@ -69,7 +69,7 @@ namespace Microsoft.DotNet.ToolManifest
         }
 
         private bool TryFindToolManifestPackages(
-            IEnumerable<(FilePath manifestfile, DirectoryPath _)> allPossibleManifests, 
+            IEnumerable<(FilePath manifestfile, DirectoryPath _)> allPossibleManifests,
             out List<(ToolManifestPackage toolManifestPackage, FilePath SourceManifest)> toolManifestPackageAndSource)
         {
             bool findAnyManifest = false;
